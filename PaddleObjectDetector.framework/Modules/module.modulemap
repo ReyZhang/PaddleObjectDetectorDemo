@@ -1,0 +1,6 @@
+framework module PaddleObjectDetector {
+  umbrella header "PaddleObjectDetector.h"
+  export *
+
+  module * { export * }
+}

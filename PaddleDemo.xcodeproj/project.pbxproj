@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		042417B35A361AADA45F8F9C /* Pods_PaddleDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CB9DEAA4E78414278FE40B9 /* Pods_PaddleDemo.framework */; };
+		8136A82C2E1BCC8100DE37A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136A82B2E1BCC8100DE37A2 /* AppDelegate.swift */; };
+		8136A82E2E1BCC8100DE37A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136A82D2E1BCC8100DE37A2 /* SceneDelegate.swift */; };
+		8136A8302E1BCC8100DE37A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136A82F2E1BCC8100DE37A2 /* ViewController.swift */; };
+		8136A8332E1BCC8100DE37A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8136A8312E1BCC8100DE37A2 /* Main.storyboard */; };
+		8136A8352E1BCC8400DE37A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8136A8342E1BCC8400DE37A2 /* Assets.xcassets */; };
+		8136A8382E1BCC8400DE37A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8136A8362E1BCC8400DE37A2 /* LaunchScreen.storyboard */; };
+		8136A8412E1BCCAD00DE37A2 /* PaddleObjectDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A8402E1BCCAD00DE37A2 /* PaddleObjectDetector.framework */; };
+		8136A8432E1BCD0600DE37A2 /* ObjectDetectorNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136A8422E1BCD0600DE37A2 /* ObjectDetectorNative.swift */; };
+		8136A8482E1BD3CF00DE37A2 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A8462E1BD3CF00DE37A2 /* opencv2.framework */; };
+		8136A8492E1BD3CF00DE37A2 /* libpaddle_api_light_bundled.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A8472E1BD3CF00DE37A2 /* libpaddle_api_light_bundled.a */; };
+		8136A84B2E1BD44400DE37A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A84A2E1BD44400DE37A2 /* AVFoundation.framework */; };
+		8136A84F2E1BD5EA00DE37A2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8136A84E2E1BD5EA00DE37A2 /* CoreMedia.framework */; };
+		8167A9DC2E24A0D9009CEB7C /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8167A9DB2E24A0D8009CEB7C /* libjpeg.a */; };
+		8167AA052E24A7DE009CEB7C /* ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8167AA042E24A7DE009CEB7C /* ResourceManager.m */; };
+		8167AA112E24D60D009CEB7C /* ti_label_list.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8167AA0F2E24D60D009CEB7C /* ti_label_list.txt */; };
+		8167AA122E24D60D009CEB7C /* picodet_l_640_cpu.nb in Resources */ = {isa = PBXBuildFile; fileRef = 8167AA102E24D60D009CEB7C /* picodet_l_640_cpu.nb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		159019B15AC6FEB6658A20A4 /* Pods-PaddleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaddleDemo.release.xcconfig"; path = "Target Support Files/Pods-PaddleDemo/Pods-PaddleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		30AD259BB866593D6F5D524F /* Pods-PaddleDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PaddleDemo.debug.xcconfig"; path = "Target Support Files/Pods-PaddleDemo/Pods-PaddleDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4CB9DEAA4E78414278FE40B9 /* Pods_PaddleDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PaddleDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8136A8282E1BCC8100DE37A2 /* PaddleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaddleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8136A82B2E1BCC8100DE37A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8136A82D2E1BCC8100DE37A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8136A82F2E1BCC8100DE37A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8136A8322E1BCC8100DE37A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8136A8342E1BCC8400DE37A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8136A8372E1BCC8400DE37A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8136A8392E1BCC8400DE37A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8136A8402E1BCCAD00DE37A2 /* PaddleObjectDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PaddleObjectDetector.framework; sourceTree = "<group>"; };
+		8136A8422E1BCD0600DE37A2 /* ObjectDetectorNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectorNative.swift; sourceTree = "<group>"; };
+		8136A8442E1BD28700DE37A2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		8136A8462E1BD3CF00DE37A2 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		8136A8472E1BD3CF00DE37A2 /* libpaddle_api_light_bundled.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libpaddle_api_light_bundled.a; sourceTree = "<group>"; };
+		8136A84A2E1BD44400DE37A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8136A84C2E1BD4C000DE37A2 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		8136A84E2E1BD5EA00DE37A2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8136A8502E1BD5F600DE37A2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8136A8522E1BD6A400DE37A2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		8167A9DB2E24A0D8009CEB7C /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		8167AA022E24A7DD009CEB7C /* PaddleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PaddleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8167AA032E24A7DE009CEB7C /* ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceManager.h; sourceTree = "<group>"; };
+		8167AA042E24A7DE009CEB7C /* ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceManager.m; sourceTree = "<group>"; };
+		8167AA0F2E24D60D009CEB7C /* ti_label_list.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ti_label_list.txt; sourceTree = "<group>"; };
+		8167AA102E24D60D009CEB7C /* picodet_l_640_cpu.nb */ = {isa = PBXFileReference; lastKnownFileType = file; path = picodet_l_640_cpu.nb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8136A8252E1BCC8100DE37A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8167A9DC2E24A0D9009CEB7C /* libjpeg.a in Frameworks */,
+				8136A84F2E1BD5EA00DE37A2 /* CoreMedia.framework in Frameworks */,
+				8136A84B2E1BD44400DE37A2 /* AVFoundation.framework in Frameworks */,
+				8136A8482E1BD3CF00DE37A2 /* opencv2.framework in Frameworks */,
+				8136A8492E1BD3CF00DE37A2 /* libpaddle_api_light_bundled.a in Frameworks */,
+				8136A8412E1BCCAD00DE37A2 /* PaddleObjectDetector.framework in Frameworks */,
+				042417B35A361AADA45F8F9C /* Pods_PaddleDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A9919EDEE7131BEF5E54807 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30AD259BB866593D6F5D524F /* Pods-PaddleDemo.debug.xcconfig */,
+				159019B15AC6FEB6658A20A4 /* Pods-PaddleDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8136A81F2E1BCC8100DE37A2 = {
+			isa = PBXGroup;
+			children = (
+				8136A82A2E1BCC8100DE37A2 /* PaddleDemo */,
+				8136A8292E1BCC8100DE37A2 /* Products */,
+				8136A83F2E1BCCAD00DE37A2 /* Frameworks */,
+				5A9919EDEE7131BEF5E54807 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8136A8292E1BCC8100DE37A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8136A8282E1BCC8100DE37A2 /* PaddleDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8136A82A2E1BCC8100DE37A2 /* PaddleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8167AA102E24D60D009CEB7C /* picodet_l_640_cpu.nb */,
+				8167AA0F2E24D60D009CEB7C /* ti_label_list.txt */,
+				8167AA032E24A7DE009CEB7C /* ResourceManager.h */,
+				8167AA042E24A7DE009CEB7C /* ResourceManager.m */,
+				8136A8422E1BCD0600DE37A2 /* ObjectDetectorNative.swift */,
+				8136A82B2E1BCC8100DE37A2 /* AppDelegate.swift */,
+				8136A82D2E1BCC8100DE37A2 /* SceneDelegate.swift */,
+				8136A82F2E1BCC8100DE37A2 /* ViewController.swift */,
+				8136A8312E1BCC8100DE37A2 /* Main.storyboard */,
+				8136A8342E1BCC8400DE37A2 /* Assets.xcassets */,
+				8136A8362E1BCC8400DE37A2 /* LaunchScreen.storyboard */,
+				8136A8392E1BCC8400DE37A2 /* Info.plist */,
+				8167AA022E24A7DD009CEB7C /* PaddleDemo-Bridging-Header.h */,
+			);
+			path = PaddleDemo;
+			sourceTree = "<group>";
+		};
+		8136A83F2E1BCCAD00DE37A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8167A9DB2E24A0D8009CEB7C /* libjpeg.a */,
+				8136A8522E1BD6A400DE37A2 /* AssetsLibrary.framework */,
+				8136A8502E1BD5F600DE37A2 /* CoreVideo.framework */,
+				8136A84E2E1BD5EA00DE37A2 /* CoreMedia.framework */,
+				8136A84C2E1BD4C000DE37A2 /* VideoToolbox.framework */,
+				8136A84A2E1BD44400DE37A2 /* AVFoundation.framework */,
+				8136A8472E1BD3CF00DE37A2 /* libpaddle_api_light_bundled.a */,
+				8136A8462E1BD3CF00DE37A2 /* opencv2.framework */,
+				8136A8442E1BD28700DE37A2 /* libc++.tbd */,
+				8136A8402E1BCCAD00DE37A2 /* PaddleObjectDetector.framework */,
+				4CB9DEAA4E78414278FE40B9 /* Pods_PaddleDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8136A8272E1BCC8100DE37A2 /* PaddleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8136A83C2E1BCC8400DE37A2 /* Build configuration list for PBXNativeTarget "PaddleDemo" */;
+			buildPhases = (
+				1D6325E094BBD3AB52C38A4D /* [CP] Check Pods Manifest.lock */,
+				8136A8242E1BCC8100DE37A2 /* Sources */,
+				8136A8252E1BCC8100DE37A2 /* Frameworks */,
+				8136A8262E1BCC8100DE37A2 /* Resources */,
+				DD61DF2EEC3C4E00822B413F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaddleDemo;
+			productName = PaddleDemo;
+			productReference = 8136A8282E1BCC8100DE37A2 /* PaddleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8136A8202E1BCC8100DE37A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					8136A8272E1BCC8100DE37A2 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+				};
+			};
+			buildConfigurationList = 8136A8232E1BCC8100DE37A2 /* Build configuration list for PBXProject "PaddleDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8136A81F2E1BCC8100DE37A2;
+			productRefGroup = 8136A8292E1BCC8100DE37A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8136A8272E1BCC8100DE37A2 /* PaddleDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8136A8262E1BCC8100DE37A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8167AA122E24D60D009CEB7C /* picodet_l_640_cpu.nb in Resources */,
+				8136A8382E1BCC8400DE37A2 /* LaunchScreen.storyboard in Resources */,
+				8136A8352E1BCC8400DE37A2 /* Assets.xcassets in Resources */,
+				8167AA112E24D60D009CEB7C /* ti_label_list.txt in Resources */,
+				8136A8332E1BCC8100DE37A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D6325E094BBD3AB52C38A4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PaddleDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD61DF2EEC3C4E00822B413F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaddleDemo/Pods-PaddleDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PaddleDemo/Pods-PaddleDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PaddleDemo/Pods-PaddleDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8136A8242E1BCC8100DE37A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8136A8302E1BCC8100DE37A2 /* ViewController.swift in Sources */,
+				8136A8432E1BCD0600DE37A2 /* ObjectDetectorNative.swift in Sources */,
+				8167AA052E24A7DE009CEB7C /* ResourceManager.m in Sources */,
+				8136A82C2E1BCC8100DE37A2 /* AppDelegate.swift in Sources */,
+				8136A82E2E1BCC8100DE37A2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8136A8312E1BCC8100DE37A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8136A8322E1BCC8100DE37A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8136A8362E1BCC8400DE37A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8136A8372E1BCC8400DE37A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8136A83A2E1BCC8400DE37A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8136A83B2E1BCC8400DE37A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8136A83D2E1BCC8400DE37A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30AD259BB866593D6F5D524F /* Pods-PaddleDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3E53R6DG9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaddleDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dlx.PaddleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PaddleDemo/PaddleDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8136A83E2E1BCC8400DE37A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159019B15AC6FEB6658A20A4 /* Pods-PaddleDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN__ARC_BRIDGE_CAST_NONARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S3E53R6DG9;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PaddleDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dlx.PaddleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PaddleDemo/PaddleDemo-Bridging-Header.h";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8136A8232E1BCC8100DE37A2 /* Build configuration list for PBXProject "PaddleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8136A83A2E1BCC8400DE37A2 /* Debug */,
+				8136A83B2E1BCC8400DE37A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8136A83C2E1BCC8400DE37A2 /* Build configuration list for PBXNativeTarget "PaddleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8136A83D2E1BCC8400DE37A2 /* Debug */,
+				8136A83E2E1BCC8400DE37A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8136A8202E1BCC8100DE37A2 /* Project object */;
+}
